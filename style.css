@@ -1,0 +1,120 @@
+* {
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.navtext{
+    padding-left: 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.container {
+    display: flex;
+    background-color:  white;
+    padding-top: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container2 {
+    display: flex;
+    background-color:  white;
+    padding-top: 48px;
+    padding-left: 32px;
+    padding-right: 32px;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.container3 {
+    display: flex;
+    background-color:  white;
+    padding-top: 48px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 80px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content-right {
+    padding-inline-start: 83px;
+}
+
+.content-left {
+    padding-inline-end: 83px;
+}
+footer{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    justify-content:space-around;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+header, footer{
+    position: sticky;
+    background-color: black;
+    color: white;
+    width: 100vw;
+}
+
+header{
+    top: 0;
+}
+
+footer{
+    bottom: 0;
+    height: 150px;
+}
+
+@media screen and (max-width: 1024px){
+    .container, .container3 {
+        flex-direction: column;
+    }
+
+    .container2 {
+        flex-direction: column;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .content-right, .content-left {
+        padding: 0px;
+        padding-top: 8px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .container, .container3 {
+        flex-direction: column;
+    }
+
+    .container2 {
+        flex-direction: column;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .content-right, .content-left {
+        padding: 0px;
+        padding-top: 8px;
+    }
+}
